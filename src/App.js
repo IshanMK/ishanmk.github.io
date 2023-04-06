@@ -11,7 +11,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Follow Me
+          Follow Me on Twitter😊😊
         </a>
       </header>
     </div>
