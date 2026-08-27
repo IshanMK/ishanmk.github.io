@@ -50,7 +50,6 @@ function Navbar() {
           Ishan Madhuranga
         </a>
 
-        {/* Desktop navigation */}
         <div className="hidden items-center gap-7 md:flex">
           {links.map(([name, href]) => (
             <a
@@ -62,7 +61,6 @@ function Navbar() {
             </a>
           ))}
 
-          {/* Theme toggle */}
           <button
             onClick={toggleTheme}
             aria-label="Toggle theme"
@@ -101,9 +99,8 @@ function Navbar() {
             )}
           </button>
 
-          {/* CV */}
           <a
-            href="/cv.pdf"
+            href="/Ishan_Madhuranga_CV.pdf"
             target="_blank"
             rel="noreferrer"
             className="rounded-md border border-emerald-500/40 px-4 py-2 text-sm text-emerald-600 transition hover:bg-emerald-500 hover:text-white dark:border-emerald-400/40 dark:text-emerald-400 dark:hover:bg-emerald-400 dark:hover:text-black"
@@ -112,7 +109,6 @@ function Navbar() {
           </a>
         </div>
 
-        {/* Mobile */}
         <div className="flex items-center gap-3 md:hidden">
           <button
             onClick={toggleTheme}
@@ -132,7 +128,6 @@ function Navbar() {
         </div>
       </div>
 
-      {/* Mobile menu */}
       {open && (
         <div className="border-t border-zinc-200 bg-white px-6 py-6 dark:border-white/10 dark:bg-[#0b0f0e] md:hidden">
           <div className="flex flex-col gap-5">
@@ -148,7 +143,7 @@ function Navbar() {
             ))}
 
             <a
-              href="/cv.pdf"
+              href="/Ishan_Madhuranga_CV.pdf"
               target="_blank"
               rel="noreferrer"
               className="text-emerald-600 dark:text-emerald-400"

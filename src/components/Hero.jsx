@@ -79,7 +79,7 @@ function Hero() {
             </a>
 
             <a
-              href="/cv.pdf"
+              href="/Ishan_Madhuranga_CV.pdf"
               target="_blank"
               rel="noreferrer"
               className="rounded-md border border-zinc-300 px-5 py-2.5 text-sm font-medium text-zinc-700 transition hover:border-emerald-500/50 hover:text-emerald-600 dark:border-white/15 dark:text-zinc-300 dark:hover:border-emerald-400/50 dark:hover:text-emerald-400"
