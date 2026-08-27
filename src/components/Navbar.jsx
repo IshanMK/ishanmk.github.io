@@ -2,19 +2,19 @@ import { useEffect, useState } from "react";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(() => {
+    return localStorage.getItem("theme") === "dark";
+  });
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
-
-    if (savedTheme === "dark") {
+    if (darkMode) {
       document.documentElement.classList.add("dark");
-      setDarkMode(true);
+      localStorage.setItem("theme", "dark");
     } else {
       document.documentElement.classList.remove("dark");
-      setDarkMode(false);
+      localStorage.setItem("theme", "light");
     }
-  }, []);
+  }, [darkMode]);
 
   const toggleTheme = () => {
     const nextDarkMode = !darkMode;
