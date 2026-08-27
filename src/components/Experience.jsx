@@ -23,9 +23,8 @@ const experience = [
       "Docker",
     ],
   },
-
   {
-    company: "IroneOne Technologies",
+    company: "IronOne Technologies",
     position: "Software Engineer (AI/ML) Intern",
     employmentType: "Internship",
     period: "Aug 2023 — Jan 2024",
@@ -97,24 +96,16 @@ function Experience() {
                   </div>
 
                   <div>
-                    <div className="mb-4 flex flex-wrap items-center gap-x-3 gap-y-1 lg:hidden">
-                      <span className="font-mono text-sm text-emerald-600 dark:text-emerald-400">
+                    <div className="mb-4 flex flex-wrap items-center lg:hidden">
+                      <span className="pr-3 font-mono text-sm text-emerald-600 dark:text-emerald-400">
                         {job.period}
                       </span>
 
-                      <span className="text-zinc-300 dark:text-zinc-700">
-                        •
-                      </span>
-
-                      <span className="text-sm text-zinc-500 dark:text-zinc-400">
+                      <span className="border-l border-zinc-300 px-3 text-sm text-zinc-500 dark:border-zinc-700 dark:text-zinc-400">
                         {job.employmentType}
                       </span>
 
-                      <span className="text-zinc-300 dark:text-zinc-700">
-                        •
-                      </span>
-
-                      <span className="text-sm text-zinc-500 dark:text-zinc-400">
+                      <span className="border-l border-zinc-300 pl-3 text-sm text-zinc-500 dark:border-zinc-700 dark:text-zinc-400">
                         {job.location}
                       </span>
                     </div>
@@ -138,7 +129,6 @@ function Experience() {
                           className="flex gap-3 text-sm leading-6 text-zinc-600 dark:text-zinc-500"
                         >
                           <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500 dark:bg-emerald-400" />
-
                           <span>{item}</span>
                         </li>
                       ))}
